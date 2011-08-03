@@ -1,0 +1,83 @@
+<table>
+  <name>questions</name>
+  <type>INNODB</type>
+  <structure>
+    <column>
+      <name>id</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <primary_key>yes</primary_key>
+      <description>Primary Key for table</description>
+    </column>
+    <column>
+      <name>sid</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <description>Section ID or Page ID from web page</description>
+    </column>
+    <column>
+      <name>cid</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <value>0</value>
+      <description>Category ID, optional</description>
+    </column>
+    <column>
+      <name>pid</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <value>0</value>
+      <description>Parent ID, optional</description>
+    </column>
+    <column>
+      <name>title</name>
+      <datatype>string</datatype>
+      <size>255</size>
+      <null>yes</null>
+      <description>Name/Title of animal</description>
+    </column>
+    <column>
+      <name>answer_content</name>
+      <datatype>data</datatype>
+      <size>auto</size>
+      <null>yes</null>
+      <description>Description of the Animal.</description>
+    </column>
+    <column>
+      <name>lastuid</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <value>0</value>
+      <description>Last user id to update the record.</description>
+    </column>
+    <column>
+      <name>lastdate</name>
+      <datatype>datetime</datatype>
+      <size>auto</size>
+      <null>yes</null>
+      <value></value>
+      <description>Last date and time the record has been updated.</description>
+    </column>
+    <column>
+      <name>viewordernum</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <value>0</value>
+      <description>The view order in which the record is to be display (sequential)</description>
+    </column>
+    <column>
+      <name>rowstate</name>
+      <datatype>integer</datatype>
+      <size>11</size>
+      <null>no</null>
+      <value>0</value>
+      <description>Rowstate refers to if the current record is not activated, activated or deleted (0, 1, 999)</description>
+    </column>
+  </structure>
+</table>
