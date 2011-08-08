@@ -1,3 +1,4 @@
 COH
 "C:\Program Files (x86)\City of Heroes\CohUpdater.exe" -compatiblecursors 1 -renderthread 1
 123
+456
